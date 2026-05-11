@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:white;
+}
+
+.topbar{
+    width:86%;
+    height:80px;
+    background:#191919;
+    margin:40px auto 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-box{
+    background:white;
+    width:150px;
+    height:55px;
+    margin-left:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.clock-box{
+    background:#2a2a2a;
+    color:white;
+    width:180px;
+    height:80px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.clock-box div{
+    font-size:25px;
+}
+
+.visit-bar{
+    width:86%;
+    margin:auto;
+    background:#27df2d;
+    text-align:center;
+    padding:10px;
+    font-size:22px;
+    color:yellow;
+    font-weight:bold;
+}
+
+.main-container{
+    width:78%;
+    margin:auto;
+    border:4px solid green;
+    padding:30px;
+}
+
+.main-title{
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.content{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+}
+
+.form-box,
+.result-box{
+    width:35%;
+    border:3px solid #5d78a8;
+    border-radius:10px;
+    padding:25px;
+}
+
+.middle-text{
+    margin-top:180px;
+    font-size:20px;
+}
+
+.qr-frame{
+    width:210px;
+    height:210px;
+    border:2px solid black;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.react-note{
+    color:green;
+    margin-top:20px;
+    font-weight:bold;
+}
