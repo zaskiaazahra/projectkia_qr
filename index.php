@@ -214,6 +214,71 @@ Download QR Code
 <script src="vue-app.js?v=10"></script>
 <script src="react-widget.js?v=10"></script>
 
+<div class="history-box mt-5">
+
+    <h3 class="mb-3">
+        QR History
+    </h3>
+
+    <table class="table table-bordered table-hover">
+
+        <thead class="table-dark">
+
+            <tr>
+                <th>No</th>
+                <th>Type</th>
+                <th>Data</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        <?php
+
+        $history =
+        mysqli_query(
+            $conn,
+            "SELECT * FROM qr_history
+            ORDER BY id DESC
+            LIMIT 5"
+        );
+
+        $no = 1;
+
+        while(
+            $row =
+            mysqli_fetch_assoc(
+                $history
+            )
+        ){
+        ?>
+
+            <tr>
+
+                <td>
+                    <?php echo $no++; ?>
+                </td>
+
+                <td>
+                    <?php echo $row['qr_type']; ?>
+                </td>
+
+                <td>
+                   <?php echo $row['qr_data']; ?>
+                </td>
+
+            </tr>
+
+        <?php
+        }
+        ?>
+
+        </tbody>
+
+    </table>
+
+</div>
 </body>
 
 </html>
