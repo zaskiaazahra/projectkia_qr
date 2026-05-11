@@ -44,18 +44,18 @@ body{
 .visit-bar{
     width:86%;
     margin:auto;
-    background:#27df2d;
+    background:#8B5E3C;
     text-align:center;
     padding:10px;
     font-size:22px;
-    color:yellow;
+    color: #A67B5B;
     font-weight:bold;
 }
 
 .main-container{
     width:78%;
     margin:auto;
-    border:4px solid green;
+    border:4px solid #8B5E3C;
     padding:30px;
 }
 
@@ -95,7 +95,37 @@ body{
 }
 
 .react-note{
-    color:green;
+    color:#8B5E3C;
     margin-top:20px;
     font-weight:bold;
+}
+
+.btn-primary{
+
+    background:
+    #8B5E3C !important;
+
+    border:
+    none !important;
+}
+
+.btn-primary:hover{
+
+    background:
+    #6F4E37 !important;
+}
+
+.btn-success{
+
+    background:
+    #A67B5B !important;
+
+    border:
+    none !important;
+}
+
+.btn-success:hover{
+
+    background:
+    #8B5E3C !important;
 }

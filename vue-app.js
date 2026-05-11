@@ -79,13 +79,47 @@ createApp({
             if(
                 this.type
                 ===
+                "URL"
+            ){
+
+                finalData =
+                this.data;
+            }
+
+            if(
+                this.type
+                ===
+                "Text"
+            ){
+
+                finalData =
+                this.data
+                +
+                "\n"
+                +
+                this.subject
+                +
+                "\n"
+                +
+                this.message;
+            }
+
+            if(
+                this.type
+                ===
                 "WhatsApp"
             ){
 
                 finalData =
                 "https://wa.me/"
                 +
-                this.data;
+                this.data
+                +
+                "?text="
+                +
+                encodeURIComponent(
+                    this.message
+                );
             }
 
             if(
@@ -95,9 +129,19 @@ createApp({
             ){
 
                 finalData =
-                "PAYMENT:"
+                "PAYMENT INFORMATION"
                 +
-                this.data;
+                "\nNomor/Rekening: "
+                +
+                this.data
+                +
+                "\nSubject: "
+                +
+                this.subject
+                +
+                "\nMessage: "
+                +
+                this.message;
             }
 
             new QRCode(
@@ -111,8 +155,11 @@ createApp({
                     text:
                     finalData,
 
-                    width:190,
-                    height:190
+                    width:220,
+                    height:220,
+
+                    correctLevel:
+                    QRCode.CorrectLevel.H
                 }
             );
 

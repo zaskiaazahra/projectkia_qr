@@ -30,10 +30,10 @@ include
 "bootstrap-loader.php";
 ?>
 
-<link rel="stylesheet"
-href="style.css">
 
+<link rel="stylesheet" href="style.css?v=20">
 <script src=
+
 "https://unpkg.com/vue@3/dist/vue.global.js">
 </script>
 
@@ -210,9 +210,9 @@ Download QR Code
 
 </div>
 
-<script src="vue-app.js"></script>
 
-<script src="react-widget.js"></script>
+<script src="vue-app.js?v=10"></script>
+<script src="react-widget.js?v=10"></script>
 
 </body>
 
